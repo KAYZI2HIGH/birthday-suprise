@@ -1,4 +1,5 @@
 'use client'
+import BackgroundMusic from '@/components/AudioPlayer';
 import { ConfettiEffect } from '@/components/ConfettiEffect';
 import { FloatingElements } from '@/components/FloatingElements';
 import { GallerySection } from '@/components/GallerySection';
@@ -16,6 +17,7 @@ const page = () => {
         <HeartfeltNote />
         <GallerySection />
       </main>
+      <BackgroundMusic/>
     </div>
   );
 }

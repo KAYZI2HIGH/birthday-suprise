@@ -5,19 +5,19 @@ export function GallerySection() {
     {
       id: 1,
       image:
-        "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "/image1.jpg",
       caption: "Beautiful memories together",
     },
     {
       id: 2,
       image:
-        "https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "/image2.png",
       caption: "Celebrating special moments",
     },
     {
       id: 3,
       image:
-        "https://images.unsplash.com/photo-1532117892888-38948e152b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "/image3.png",
       caption: "Here's to many more adventures",
     },
   ];
@@ -37,7 +37,7 @@ export function GallerySection() {
                 src={item.image}
                 alt={item.caption}
                 fill
-                className="object-cover"
+                className="object-cover "
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-pink-900 to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-end">
