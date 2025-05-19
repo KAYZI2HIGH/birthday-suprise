@@ -1,4 +1,5 @@
-import React, { memo } from "react";
+import Image from "next/image";
+import React from "react";
 export function GallerySection() {
   const memories = [
     {
@@ -31,11 +32,14 @@ export function GallerySection() {
             key={item.id}
             className="group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-500 hover:scale-105"
           >
-            <img
-              src={item.image}
-              alt={item.caption}
-              className="w-full h-80 object-cover"
-            />
+            <div className="w-full h-80 relative">
+              <Image
+                src={item.image}
+                alt={item.caption}
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-pink-900 to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 flex items-end">
               <p className="text-white p-6 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 {item.caption}
